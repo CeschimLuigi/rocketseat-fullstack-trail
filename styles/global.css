@@ -25,9 +25,37 @@
 
     --text-color-primary:#F1F5F9;
     --text-color-secondary:#CBD5E1;
+
+    /* FONTS */
+
+    --font-family:'Archivo', sans-serif;
+    --h1: 800 24px135% var(--font-family);
+    --h3: 800 14px140% var(--font-family);
+    --text-span:600 14px145% var(--font-family);
+    --text:400 14px140% var(--font-family);
+    --text-sm:400 14px160% var(--font-family);
+
+
+
+
 }
 
 body{
     color:var(--text-color-primary);
     background-color: var(--bg-color);
+    font:var(--text);
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+
+}
+
+a:hover{
+    color: var(--brand-color-light);
+
+}
+h1, h2, h3{
+    font:inherit;
 }
