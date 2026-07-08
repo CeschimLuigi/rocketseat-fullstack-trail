@@ -13,9 +13,9 @@
 
     --red:#E3646E;
     --purple:#BB72E9;
-    --red:#3996DB;
-    --red:#82BC4F;
-    --red:#EABD5F;
+    --blue:#3996DB;
+    --green:#82BC4F;
+    --yellow:#EABD5F;
 
     /* Base */
     --gray-100:#E2E4E9;
@@ -42,7 +42,15 @@
     
     /* FONTS - MAVEN */
     --text-md: 16px / 140% var(--font-family-maven);
-    --text-md: 14px / 140% var(--font-family-maven);
+    --text-sm: 14px / 140% var(--font-family-maven);
     
 
+}
+
+body{
+    margin: auto;
+}
+
+li{
+    list-style: none;
 }
