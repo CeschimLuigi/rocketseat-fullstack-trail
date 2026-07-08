@@ -107,8 +107,30 @@ section{
         justify-content: center;
     }
 
+    > a {
+        animation: bounce 2s infinite;
+        cursor: pointer;
+        transition: all 0.3s ease;
 
-    
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(12px);
+    }
 }
 
 #projects{
