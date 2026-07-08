@@ -28,15 +28,15 @@ section{
 
         .tag{
             height: 40px;
-            width: inherit;
             display: flex;
+            width: inherit;
             gap: 16px;
             width: 754px;
             
             .tags{
                 display: flex;
                 align-items: center;
-                width: 114px;
+                width: auto ;
                 height: 40px;
                 padding: 8px 16px;
                 gap: 8px;
