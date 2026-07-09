@@ -37,13 +37,26 @@
   --supporting-pink: #F682A5;
 
   /* Typography - Poppins */
-  --font-family-base: 'Poppins', sans-serif;
+  --font-family-base: 'Poppsins', sans-serif;
 
   --font-heading1: 32px/120%/Bold;
   --font-heading2: 24px/120%/Bold;
   --font-heading3: 20px/120%/Bold;
   --font-heading4: 16px/120%/Bold;
+
+  --text: 400 1rem/1.5 var(--font-family-base);
+  --text-sm: 400 1rem 0.875/1.4 var var(--font-family-base);
 }
 body{
     overflow: hidden;
+    font: var(--text);
+    color: var(--text-secondary);
+}
+h1,h2{
+    color: var(--text-primary);
+    
+}
+img{
+    max-width: 100%;
+    height: 100%;
 }
