@@ -44,3 +44,6 @@
   --font-heading3: 20px/120%/Bold;
   --font-heading4: 16px/120%/Bold;
 }
+body{
+    overflow: hidden;
+}
