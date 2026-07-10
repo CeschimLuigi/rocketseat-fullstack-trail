@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+
+    /* Font Family */
+    --font-family-logo: 'Leckerli One', cursive;
+    --font-family-heading: 'Baloo 2', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+
+    /* Typography */
+    --font-logo: var(--font-family-logo) 40px/Auto/Regular;
+    --font-heading-md: var(--font-family-heading) 28px/Auto/Bold;
+    --font-heading-sm: var(--font-family-heading) 18px/Auto/Bold;
+    --font-body-md: var(--font-family-body) 16px/Auto/Regular;
+    --font-body-sm: var(--font-family-body) 14px/Auto/Regular;
+    --font-body-xs: var(--font-family-body) 12px/Auto/Regular;
+
+    /* Brand */
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+
+    /* Accent Colors */
+    --accent-purple: #B259FF;
+    --accent-fuschia: #FF59F9;
+    --accent-pink: #FF598B;
+    --accent-orange: #FF8B59;
+    --accent-yellow: #FFCD59;
+    --accent-lime: #E1FF59;
+    --accent-green: #59FF91;
+    --accent-cyan: #59FFF9;
+    --accent-navy: #6A59FF;
+
+    /* Feedback */
+    --feedback-danger: #FF5959;
+
+    /* Input */
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+
+    /* Shape */
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+
+    /* Text */
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+}
+
+body{
+    overflow: hidden;
+
+}
