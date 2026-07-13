@@ -1,0 +1,24 @@
+main{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 80px 64px;
+    background-color: var(--shape-body);
+
+    .main-container{
+        height: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h2{
+          font: var(--font-heading-md); 
+          color: var(--text-heading); 
+          
+          
+        }
+
+        
+    }
+}

@@ -14,17 +14,18 @@
     --font-family-body: 'Open Sans', sans-serif;
 
     /* Typography */
-    --font-logo: var(--font-family-logo) 40px/Auto/Regular;
-    --font-heading-md: var(--font-family-heading) 28px/Auto/Bold;
-    --font-heading-sm: var(--font-family-heading) 18px/Auto/Bold;
-    --font-body-md: var(--font-family-body) 16px/Auto/Regular;
-    --font-body-sm: var(--font-family-body) 14px/Auto/Regular;
-    --font-body-xs: var(--font-family-body) 12px/Auto/Regular;
+    --font-logo: 400 40px/normal var(--font-family-logo);
+    --font-heading-md: 700 28px/normal var(--font-family-heading);
+    --font-heading-sm: 700 18px/normal var(--font-family-heading);
+    --font-body-md: 400 16px/normal var(--font-family-body);
+    --font-body-sm: 400 14px/normal var(--font-family-body);
+    --font-body-xs: 400 12px/normal var(--font-family-body);
 
     /* Brand */
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
+
 
     /* Accent Colors */
     --accent-purple: #B259FF;
@@ -58,5 +59,15 @@
 
 body{
     overflow: hidden;
+    color: var(--text-body);
 
+    width: 100%;
+    padding: 20px;
+    background-color: var(--shape-background);
+
+
+}
+
+fieldset{
+    border: none;
 }
