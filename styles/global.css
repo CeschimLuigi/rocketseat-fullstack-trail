@@ -71,3 +71,12 @@ body{
 fieldset{
     border: none;
 }
+
+.flex{
+    display: flex;
+    gap: 16px;
+
+}
+.flex-1{
+    flex:1
+}

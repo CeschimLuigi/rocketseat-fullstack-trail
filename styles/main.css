@@ -11,6 +11,10 @@ main{
         display: flex;
         flex-direction: column;
         gap: 40px;
+        padding-inline: 66px;
+        max-width: 820px;
+        margin-inline: auto;
+
 
         h2{
           font: var(--font-heading-md); 
@@ -19,6 +23,6 @@ main{
           
         }
 
-        
+
     }
 }
