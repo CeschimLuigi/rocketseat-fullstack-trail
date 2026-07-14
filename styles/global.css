@@ -59,24 +59,20 @@
 
 body{
     overflow: hidden;
-    color: var(--text-body);
-
     width: 100%;
     padding: 20px;
+    color: var(--text-body);
     background-color: var(--shape-background);
-
-
 }
 
-fieldset{
-    border: none;
-}
 
+/* Utilitários */
 .flex{
     display: flex;
     gap: 16px;
+}
 
-}
 .flex-1{
-    flex:1
+    flex: 1;
 }
+
