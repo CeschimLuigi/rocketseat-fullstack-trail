@@ -16,6 +16,7 @@
         flex-wrap: wrap;
         margin-top: 2rem;
     }
+    
 
 @media (width >= 80em){
     .card{
