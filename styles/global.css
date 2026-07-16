@@ -42,6 +42,7 @@
 }
 
 body{
+    min-width: 360px;
     color:var(--text-color-primary);
     background-color: var(--bg-color);
     font:var(--text);
@@ -97,3 +98,41 @@ main{
 
     
 }
+
+@media (width < 80em){
+  .desktop-only{ display: none; }
+
+  /* padding do frame mobile */
+  .container{
+    padding-inline: 16px;
+  }
+
+  /* conteudo em coluna unica, centralizado numa largura legivel.
+     no piso de 360 vira 328 de conteudo; em telas maiores fica centrado
+     em vez de esticar ou travar as imagens em 328 */
+  main.container{
+    /* fluido com piso (328 = spec mobile) e teto (700 = linha legivel);
+       os gutters laterais vem da margem automatica */
+    width: clamp(328px, 90%, 700px);
+    max-width: none;
+    padding-inline: 0;
+    margin-inline: auto;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "featured"
+      "weekly"
+      "ai"
+      "aside";
+  }
+
+  /* imagens preenchem a coluna (dao 328 no piso de 360 naturalmente) */
+  main img{
+    width: 100%;
+  }
+  /* deixa os itens encolherem abaixo do conteudo (destrava scroll interno) */
+  main > *{
+    min-width: 0;
+  }
+}
+

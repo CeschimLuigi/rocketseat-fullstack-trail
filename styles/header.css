@@ -1,4 +1,6 @@
 #primary{
+    justify-content: space-between;
+
 
     div{
         display: flex;
@@ -21,4 +23,16 @@
     border: solid 1px var(--stroke-color);
     border-inline: none;
     justify-content: space-between;
+    margin-inline: auto;
+}
+
+@media (width < 80em){
+    /* categorias viram carrossel horizontal */
+    #secondary{
+        gap: 24px;
+        overflow-x: auto;
+    }
+    #secondary a{
+        white-space: nowrap;
+    }
 }
