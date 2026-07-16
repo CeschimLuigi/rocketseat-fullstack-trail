@@ -1,11 +1,34 @@
 footer{
     display: flex;    
-    padding-block: 24px;
+    padding-block: 16px;
     gap: 24px;
-
     font: 14px/150% var(--font-family);
+    align-items: center;
+
+    & .gemeos{
+        display: flex;
+        gap: 16px;
+    }
 }
 footer span:nth-child(1){
     justify-content: flex-start;
     margin-right:auto ;
+}
+
+
+
+@media (width < 80em){
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        & span:nth-child(1){
+            justify-content: center;
+            margin: 0;
+        }
+
+    }
 }

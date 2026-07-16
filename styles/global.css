@@ -56,3 +56,10 @@ a:hover{
 .bg-surface-color{
     background-color:var(--surface-color);
 }
+
+/* Esconde em telas menores que 80em (mobile/tablet) */
+@media (width < 80em){
+    .desktop-only{
+        display: none;
+    }
+}
