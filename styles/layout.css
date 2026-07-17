@@ -1,12 +1,14 @@
 #app{
     display: grid;
     grid-template-columns: 51.25% 48.75%;
+    margin-block: 20px;
 
     height: 100vh;
     overflow: hidden;
 }
 
 main{
+
     overflow: auto;
     padding: 4rem;
 
@@ -50,3 +52,60 @@ aside{
         }
     }
 }
+
+@media (width < 80em){
+
+    
+    #app{
+        display: grid;
+        grid-template-columns: 1fr;   /* volta pra 1 coluna (era 51.25% 48.75%) */
+        grid-template-areas:
+        "aside"
+        "main";
+
+        /* solta o height fixo: no empilhado a pagina rola normal */
+        height: auto;
+        overflow: auto;
+        margin-block: 20px;
+
+    }
+
+    aside{
+        grid-area: aside;
+        margin: 0;
+
+    }
+    main{
+        grid-area: main;
+        margin: 0;
+
+        .main-container{
+            margin: auto;
+
+
+            
+
+            .form-title{
+                display: flex;
+                flex-direction: column;
+                align-items:start;
+                justify-content: center;
+                text-align: left;
+            }
+        }
+
+
+    }
+
+    .aside-container{
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+}
+
+
